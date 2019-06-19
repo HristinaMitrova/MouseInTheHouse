@@ -1,4 +1,3 @@
-# Mouse In The House
 Windows Forms проект : Mouse In The House
 
       Членови на тимот: Христина Митрова,Марија Василева и Моника Темелковска 
