@@ -69,6 +69,62 @@
 - формата за инструкциите за играње: ``` public partial class Instructions_Form : Form ```;
 - формата за означување на победа:``` public partial class Congratulations_Form : Form ```;
 - формата за означување на пораз: ```public partial class YouLost_Form : Form ```.
+#### 3.2. Функции 
+##### 3.2.1  ```private void pobedi (int niv)```
+ Во формата за почеток на нова игра:``` public partial class Playing_Scene : Form```:
+ 
+  ```
+private void pobedi (int niv)
+        {
+            string message = "LEVEL ";
+            string title = "";
+        
+            if (niv == 1)
+            {
+                message += "2";
+                nivo = 2;
+                pb_movingMouse.Location = new Point(132, 520);
+                timer1.Interval = 13;
+                
+                label7.Text = "2";
+                MessageBox.Show(message, title);
+                pb_movingMouse.Location = new Point(132, 520);
+            }
+            else if (niv == 2)
+            {
+                nivo = 3;
+                message += "3";
+                pb_movingMouse.Location = new Point(132, 520);
+                timer1.Interval = 5;
+                
+                label7.Text = "3";
+                MessageBox.Show(message, title);
+                pb_movingMouse.Location = new Point(132, 520);
+            }
+            else
+            {
+                this.Hide();
+                win = new Congratulations_Form();
+                win.Show();
+            }
+        }
+
+ ```
+Функцијата ```pobedi``` проверува до кое ниво е стигнат играчот и во зависност од тоа му прикажува соодветен ```MessageBox``` за нивото до кое истиот пристигнал и да го постави глувчето на почетната позиција, или пак во најдобар случај доколку играчот победил во сите 3 нивоа, да биде пренасочен на формата за прогласување на победа.
+
+##### 3.2.2 ```private bool IsInTouch(PictureBox pb_movingMouse, PictureBox pb)```
+Оваа функција врши проверка дали глувчето, односно објектот од класата PictureBox кој е наменет за да ја означи сликата на глувчето, е во допир со некој друг објект од класата ```PictureBox```. Доколку глувчето се допира со некој друг таков објект, функцијата враќа вредност ```true``` , во спротивно враќа вредност ```false```. Проверката се врши со својството ```Control.Bounds``` и методот ```IntersectsWith()```. 
+
+```private bool IsInTouch(PictureBox pb_movingMouse, PictureBox pb)
+        {
+            if (pb_movingMouse.Bounds.IntersectsWith(pb.Bounds))
+            {
+                return true;
+            }
+            else return false;
+        }
+```
+
 
 
 
