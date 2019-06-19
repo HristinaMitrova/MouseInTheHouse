@@ -125,6 +125,54 @@ private void pobedi (int niv)
         }
 ```
 
+####  3.3 Настани  
+##### 3.3.1 ```private void Form2_KeyDown(object sender, KeyEventArgs e) ```
+
+```private void Form2_KeyDown(object sender, KeyEventArgs e)```
+
+Оваа функција го овозможува движењето на глувчето во сите четири насоки на правилен начин. Односно, со оваа функција глувчето е ограничено да се движи само во рабовите на собата и да не може да помине низ ѕидовите и масите кои се означени со
+```PictureBox``` – ови.
+Секако доколку се случи глувчето да дојде во допир со некоја од пречките, тогаш доаѓа до намалување на неговите животи. Доколку дојде во допир со сиренцата, тогаш истите исчезнуваат и се добива впечаток дека глувчето ги изело. Тогаш кога глувчето ќе ги изеде сите сиренца и ќе дојде во допир со ```PictureBox``` -от кој го означува неговиот дом, тогаш се повикува методот ```pobedi(nivо)```; со кој се ажурира нивото на играчот, а глувчето се враќа на почетната позиција и повторно се појавуваат сиренцата.
+
+##### 3.3.2 Тајмер
+ 
+    
+```private void timer1_Tick(object sender, EventArgs e)
+        {
+            label6.Text = countLives.ToString();
+            pb_movingCat1.Location = new Point(pb_movingCat1.Location.X, pb_movingCat1.Location.Y - 1);
+            pb_movingCat2.Location = new Point(pb_movingCat2.Location.X-1, pb_movingCat2.Location.Y);
+            if (pb_movingCat1.Location.Y == 10) pb_movingCat1.Location = new Point(pb_movingCat1.Location.X,500);
+            if (pb_movingCat2.Location.X == 40) pb_movingCat2.Location = new Point(225, pb_movingCat2.Location.Y);
+            if (IsInTouch(pb_movingMouse, pb_movingCat1) || IsInTouch(pb_movingMouse, pb_movingCat2)
+                    || IsInTouch(pb_movingMouse, stapica1) || IsInTouch(pb_movingMouse, stapica2)
+                    || IsInTouch(pb_movingMouse, stapica3))
+            {
+
+                pb_movingMouse.Location = new Point(132,520);
+                countLives =countLives-1;
+                if (countLives == 0)
+                {
+                    this.Hide();
+                    loserForm = new YouLost_Form();
+                    loserForm.Show();
+                }
+            }
+            stapica1.Location = new Point(stapica1.Location.X + 1, stapica1.Location.Y);
+            stapica2.Location = new Point(stapica2.Location.X + 1, stapica2.Location.Y);
+            stapica3.Location = new Point(stapica3.Location.X - 1, stapica3.Location.Y);
+            if (stapica1.Location.X == 225) stapica1.Location = new Point(40, stapica1.Location.Y);
+            if (stapica3.Location.X == 40) stapica3.Location = new Point(225, stapica3.Location.Y);
+            if (stapica2.Location.X == 225) stapica2.Location = new Point(40, stapica2.Location.Y);
+            fire.Location = new Point(fire.Location.X, fire.Location.Y + 1);
+            if (fire.Location.Y == 102) fire.Location = new Point(fire.Location.X, 35);
+        }
+```
+
+Функцијата на тајмерот е да ја регулира брзината на движењето на препреките во секое од нивоата соодветно. Дополнително има проверки со помош на функцијата IsInTouch(),при што се проверува доколку глувчето допрело некоја од препреките да дојде до намалување на неговите животи, што ќе допринесе за промена во лабелата за животи и ќе го врати на почетната позиција.
+Во случај глувчето да ги изгуби сите животи тогаш играчот е пренасочен на формата со која се објавува поразот.
+
+
 
 
 
