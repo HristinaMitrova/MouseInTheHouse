@@ -230,7 +230,7 @@ namespace MouseInTheHouse
             }
             if (pom==false)pb_movingMouse.Location = new Point(x, y);
         }
-        private void Form2_KeyPress(object sender,KeyPressEventArgs e)
+        /*private void Form2_KeyPress(object sender,KeyPressEventArgs e)
         {
             if (PAUSE == false)
             {
@@ -240,7 +240,7 @@ namespace MouseInTheHouse
                 }
             }
             else PAUSE = false;
-        }
+        }*/
         private void pobedi (int niv)
         {
             string message = "LEVEL ";
@@ -284,7 +284,7 @@ namespace MouseInTheHouse
             if (pb_movingCat2.Location.X == 40) pb_movingCat2.Location = new Point(225, pb_movingCat2.Location.Y);
             if (IsInTouch(pb_movingMouse, pb_movingCat1) || IsInTouch(pb_movingMouse, pb_movingCat2)
                     || IsInTouch(pb_movingMouse, stapica1) || IsInTouch(pb_movingMouse, stapica2)
-                    || IsInTouch(pb_movingMouse, stapica3))
+                    || IsInTouch(pb_movingMouse, stapica3)||IsInTouch(pb_movingMouse,fire))
             {
 
                 pb_movingMouse.Location = new Point(132,520);

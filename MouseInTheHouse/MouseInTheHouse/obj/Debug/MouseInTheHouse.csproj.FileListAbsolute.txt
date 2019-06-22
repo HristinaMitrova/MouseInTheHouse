@@ -54,3 +54,17 @@ C:\Users\Hristina\myrepo\myrepo\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseI
 C:\Users\Hristina\myrepo\myrepo\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.csproj.CoreCompileInputs.cache
 C:\Users\Hristina\myrepo\myrepo\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.exe
 C:\Users\Hristina\myrepo\myrepo\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.pdb
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\bin\Debug\MouseInTheHouse.exe.config
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\bin\Debug\MouseInTheHouse.exe
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\bin\Debug\MouseInTheHouse.pdb
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.csprojAssemblyReference.cache
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.Form1.resources
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.Playing_Scene.resources
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.Instructions_Form.resources
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.Congratulations_Form.resources
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.YouLost_Form.resources
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.Properties.Resources.resources
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.csproj.GenerateResource.cache
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.csproj.CoreCompileInputs.cache
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.exe
+C:\Users\Hristina\rp\MouseInTheHouse\MouseInTheHouse\obj\Debug\MouseInTheHouse.pdb

@@ -120,10 +120,10 @@
             // pb_movingCat1
             // 
             this.pb_movingCat1.BackColor = System.Drawing.Color.Transparent;
-            this.pb_movingCat1.Image = global::MouseInTheHouse.Properties.Resources.movingCat1;
-            this.pb_movingCat1.Location = new System.Drawing.Point(54, 495);
+            this.pb_movingCat1.Image = global::MouseInTheHouse.Properties.Resources.catMovingUp;
+            this.pb_movingCat1.Location = new System.Drawing.Point(56, 495);
             this.pb_movingCat1.Name = "pb_movingCat1";
-            this.pb_movingCat1.Size = new System.Drawing.Size(58, 83);
+            this.pb_movingCat1.Size = new System.Drawing.Size(43, 71);
             this.pb_movingCat1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_movingCat1.TabIndex = 1;
             this.pb_movingCat1.TabStop = false;
@@ -135,10 +135,10 @@
             // pb_movingCat2
             // 
             this.pb_movingCat2.BackColor = System.Drawing.Color.Transparent;
-            this.pb_movingCat2.Image = global::MouseInTheHouse.Properties.Resources.mace_horizontaln;
+            this.pb_movingCat2.Image = global::MouseInTheHouse.Properties.Resources.catMovingLeft;
             this.pb_movingCat2.Location = new System.Drawing.Point(169, 241);
             this.pb_movingCat2.Name = "pb_movingCat2";
-            this.pb_movingCat2.Size = new System.Drawing.Size(83, 48);
+            this.pb_movingCat2.Size = new System.Drawing.Size(66, 32);
             this.pb_movingCat2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_movingCat2.TabIndex = 2;
             this.pb_movingCat2.TabStop = false;
