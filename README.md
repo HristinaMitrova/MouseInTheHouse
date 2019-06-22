@@ -137,7 +137,9 @@ private void pobedi (int niv)
 ##### 3.3.2 Тајмер
  
     
-```private void timer1_Tick(object sender, EventArgs e)
+```
+
+private void timer1_Tick(object sender, EventArgs e)
         {
             label6.Text = countLives.ToString();
             pb_movingCat1.Location = new Point(pb_movingCat1.Location.X, pb_movingCat1.Location.Y - 1);
